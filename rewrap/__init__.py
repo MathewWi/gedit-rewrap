@@ -22,6 +22,7 @@
 Rewrap plugin package
 
 2010-06-18  Version 1.0.0
+2010-07-11  Version 1.1.0
 
 Description:
 This gedit plugin will re-wrap selected lines of text, e.g. comments,
@@ -30,7 +31,8 @@ the indentation and any leading comment characters based on the first
 line in the selection.
 
 To use it, select the lines of text to be reformatted and then either
-select the menu item (Edit > Rewrap) or press its accelerator keys.
+select the menu item (Edit > Rewrap > Rewrap) or press its accelerator
+keys.
 
 The selection can be made from anywhere on the first and last lines and
 will automatically expand to include the full lines.  If no text
@@ -54,6 +56,12 @@ capital.  You will just have to manually remove those.
 
 When re-wrapping text indented with hard tabs, the tab width set in
 gedit Preferences is taken into account.
+
+For a comment that occurs at the end of a line of code, you can use the
+"Rewrap trailing comment" feature.  To use this feature, start your
+selection just left of the comment marker, e.g. '#' or '//'.
+
+There are a few options that can be set in rewrap.py.
 
 
 Typical location:
